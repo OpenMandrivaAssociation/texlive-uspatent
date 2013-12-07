@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-uspatent
 Version:	1.0
-Release:	2
+Release:	3
 Summary:	U.S. Patent Application Tools for LaTeX and LyX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uspatent
