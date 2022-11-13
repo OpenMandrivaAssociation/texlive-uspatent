@@ -1,18 +1,12 @@
-# revision 27744
-# category Package
-# catalog-ctan /macros/latex/contrib/uspatent
-# catalog-date 2012-09-19 18:03:54 +0200
-# catalog-license lppl1.3
-# catalog-version 1.0
 Name:		texlive-uspatent
-Version:	1.0
-Release:	11
+Version:	27744
+Release:	1
 Summary:	U.S. Patent Application Tools for LaTeX and LyX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uspatent
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uspatent.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uspatent.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uspatent.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uspatent.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ beautifully formatted, consistent U.S. Patent Application using
 LaTeX and/or LyX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -65,7 +59,7 @@ LaTeX and/or LyX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
