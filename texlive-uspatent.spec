@@ -3,7 +3,7 @@ Version:	27744
 Release:	2
 Summary:	U.S. Patent Application Tools for LaTeX and LyX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uspatent
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/uspatent
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uspatent.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uspatent.doc.r%{version}.tar.xz
